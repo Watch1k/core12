@@ -1,0 +1,659 @@
+﻿include mixins.jade
+
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title Template
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='format-detection', content='telephone=no')
+		link(rel='stylesheet', media='all', href='css/screen.css')
+	body
+		//- wrapper
+		.wrapper
+			//- main
+			.main
+				//- header
+				header.main__header.header
+					.header__center.center
+						//- logo
+						a.header__logo.logo
+							.logo__icon
+								+i('core12')
+							.logo__title Автомотизация автобизнеса под ключ
+						.header__right
+							a.header__phone(href='tel:+74993460900') +7 (499)
+								span.header__phone-bold 346 09 00
+							//- lang
+							.header__lang.lang
+								.lang__head.js-lang En
+								.lang__list
+									a.lang__item(href='#') Ru
+				//- slider
+				.main__slider.slider.js-slider
+					.slider__list.js-slider-list
+						.slider__item.js-slider-item(style='background-image: url(img/bg-slider-1.jpg)')
+							.slider__center.center
+								//- mechanic
+								.slider__mechanic.mechanic
+									.mechanic__preview
+										img.mechanic__img(src='img/mechanic.png')
+									.mechanic__profit
+										.mechanic__profit-value 21
+											span.mechanic__profit-percent %
+										.mechanic__profit-title увеличение прибыли
+										.mechanic__profit-circles
+											.mechanic__profit-circle
+									.mechanic__about
+										.mechanic__title Тимур Бурханов
+										.mechanic__text Генеральный директор ООО «Галион»
+										.mechanic__text.mechanic__text_c Автомойка, автосервис
+										.mechanic__text г. Москва, Лужнецкая набережная, д. 10А, стр. 3
+								.slider__content
+									.slider__title Увеличим прибыль от 14% за 7 дней
+									.slider__text с технологиями исключения упущенной выгоды или мы вернем Вам деньги
+									button.slider__btn.btn.js-popup-btn(data-popup='js-popup-join') Увеличить прибыль
+						.slider__item.js-slider-item(style='background-image: url(img/bg-slider-1.jpg)')
+							.slider__center.center
+								//- mechanic
+								.slider__mechanic.mechanic
+									.mechanic__preview
+										img.mechanic__img(src='img/mechanic.png')
+									.mechanic__profit
+										.mechanic__profit-value 21
+											span.mechanic__profit-percent %
+										.mechanic__profit-title увеличение прибыли
+										.mechanic__profit-circles
+											.mechanic__profit-circle
+									.mechanic__about
+										.mechanic__title Тимур Бурханов
+										.mechanic__text Генеральный директор ООО «Галион»
+										.mechanic__text.mechanic__text_c Автомойка, автосервис
+										.mechanic__text г. Москва, Лужнецкая набережная, д. 10А, стр. 3
+								.slider__content
+									.slider__title Увеличим прибыль от 14% за 7 дней
+									.slider__text с технологиями исключения упущенной выгоды или мы вернем Вам деньги
+									button.slider__btn.btn.js-popup-btn(data-popup='js-popup-join') Увеличить прибыль
+					.slider__nav
+						.slider__nav-center.center.js-slider-nav
+			//- section
+			.section
+				.section__center.center
+					//- title
+					.section__title.title Программно-аппаратный комплекс Core12
+					.section__body
+						//- title
+						.title.title_sm Основные элементы
+						//- els
+						.els.js-els
+							.els__col
+								.els__item.js-els-item
+									img.els__img(src='img/el-1.jpg')
+									.els__info
+										.els__title Сервер
+										a.els__more.js-els-more(href='#')
+											.els__more-title Подробнее
+											.els__more-icon
+												+i('arrow-down')
+									.els__over
+										button.els__over-close.js-els-close
+											+i('close')
+										.els__over-text Надежен и защищен от сбоев при отсутствии электричества. Стабильная работа может осуществляться без интернета 30 дней с полной сохранностью Вашей информации.
+							.els__col
+								.els__item.js-els-item
+									img.els__img(src='img/el-2.jpg')
+									.els__info
+										.els__title Личный кабинет
+										a.els__more.js-els-more(href='#')
+											.els__more-title Подробнее
+											.els__more-icon
+												+i('arrow-down')
+									.els__over
+										button.els__over-close.js-els-close
+											+i('close')
+										.els__over-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cum suscipit, quam itaque, qui odit! Quod quis molestiae ut enim, necessitatibus sapiente laborum. Nemo officiis porro, nihil doloribus voluptate cumque.
+							.els__col
+								.els__item.js-els-item
+									img.els__img(src='img/el-3.jpg')
+									.els__info
+										.els__title Планшет
+										a.els__more.js-els-more(href='#')
+											.els__more-title Подробнее
+											.els__more-icon
+												+i('arrow-down')
+									.els__over
+										button.els__over-close.js-els-close
+											+i('close')
+										.els__over-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate incidunt nisi necessitatibus unde ex, iste amet voluptates laborum, beatae placeat officiis adipisci suscipit veniam corporis, cumque voluptatem laboriosam omnis at.
+							.els__col
+								.els__item.js-els-item
+									img.els__img(src='img/el-4.jpg')
+									.els__info
+										.els__title Камеры
+										a.els__more.js-els-more(href='#')
+											.els__more-title Подробнее
+											.els__more-icon
+												+i('arrow-down')
+									.els__over
+										button.els__over-close.js-els-close
+											+i('close')
+										.els__over-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, rerum earum iusto! Commodi consequuntur, quibusdam itaque exercitationem assumenda eos nam? Consectetur quis vel autem delectus, esse ipsa saepe, debitis quam.
+							.els__col
+								.els__item.js-els-item
+									img.els__img(src='img/el-5.jpg')
+									.els__info
+										.els__title POS Компьютер
+										a.els__more.js-els-more(href='#')
+											.els__more-title Подробнее
+											.els__more-icon
+												+i('arrow-down')
+									.els__over
+										button.els__over-close.js-els-close
+											+i('close')
+										.els__over-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, pariatur fugit in nam nisi beatae. Delectus unde vero dolorem provident maiores aperiam ex ipsam saepe ratione earum, maxime placeat sit!
+							.els__col
+								.els__item.js-els-item
+									img.els__img(src='img/el-6.jpg')
+									.els__info
+										.els__title Планшет кассира
+										a.els__more.js-els-more(href='#')
+											.els__more-title Подробнее
+											.els__more-icon
+												+i('arrow-down')
+									.els__over
+										button.els__over-close.js-els-close
+											+i('close')
+										.els__over-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta suscipit, quibusdam minus perferendis laboriosam necessitatibus error sapiente nobis est vitae dignissimos, debitis provident. Illo ut omnis, recusandae itaque debitis ab?
+						//- title
+						.title.title_sm С Core12 Вы сможете
+						//- benefits
+						.benefits
+							.benefits__item
+								.benefits__icon
+									+i('benefits-1')
+								.benefits__text Увеличить прибыль
+							.benefits__item
+								.benefits__icon
+									+i('benefits-2')
+								.benefits__text Снизить расходы
+							.benefits__item
+								.benefits__icon
+									+i('benefits-3')
+								.benefits__text Получить больше новых Клиентов
+							.benefits__item
+								.benefits__icon
+									+i('benefits-4')
+								.benefits__text Легко контролировать все процессы
+							.benefits__item
+								.benefits__icon
+									+i('benefits-5')
+								.benefits__text Автоматизировать учет и бизнес
+							.benefits__item
+								.benefits__icon
+									+i('benefits-6')
+								.benefits__text Улучшить работу персонала и сервис
+			//- section
+			.section.section_dark
+				.section__center.center
+					//- title
+					.section__title.title Эффективное управление бизнесом
+					.section__body
+						//- control
+						.control
+							.control__row
+								.control__col.control__col_1
+									.control__preview
+										img.control__img(src='img/control-1.png')
+								.control__col
+									.control__wrap
+										//- content
+										.control__content.content
+											h2 Легкий контроль на каждом этапе с автоматическим учетом
+											p В ваше пользование предоставляется умное оборудование, которое автоматизирует и упростит работу с Клиентом на каждом этапе с момента въезда до момента выезда:
+											ul
+												li Учет автомобиля;
+												li Распознавание гос. номера;
+												li Фиксация времени заезда и выезда;
+												li Определение повторного приезда и частника бонусной программы;
+												li Извещение персонала о транспортном средстве.
+							.control__row
+								.control__col
+									.control__wrap
+										//- content
+										.control__content.content
+											h2 Оперативность в предоставлении услуг без потери качества
+											p Для удобства и повышения результативности персонала имеется отдельная консоль управления в планшете. Комплекс значительно облегчает и ускоряет процесс предоставление услуг Клиенту:
+											ul
+												li Прайс-лист по услугам;
+												li Прайс-лист по магазину и кафе;
+												li Карточка Клиента;
+												li Внесение комментариев;
+												li Назначение исполнителей.
+											p Система автоматически рассчитает  стоимость заказа с учетом заложенных скидок и c подтверждением данных, на кассе происходит печать чека.
+								.control__col.control__col_2
+									.control__preview
+										img.control__img(src='img/control-2.png')
+							.control__row
+								.control__col.control__col_3
+									.control__preview
+										img.control__img(src='img/control-3.png')
+								.control__col
+									.control__wrap
+										//- content
+										.control__content.content
+											h2 Управление в нужный момент из любой точки мира
+											p Богатый функционал и в тоже время, не перегруженный интерфейс личного кабинета владельца — делает контроль легким и приятным. А уникальная система своевременного оповещения экономит драгоценное время:
+											ul
+												li Мгновенное предупреждение упущенной выгоды и подозрительной ситуации;
+												li Координация работы персонала;
+												li База клиентов с историей посещения;
+												li Управление финансами, и продажами;
+												li Список контрагентов и особые прайс-листы;
+												li Онлайн наблюдение и видео архив;
+												li Удобный и детальный учет.
+							.control__row
+								.control__col
+									.control__wrap
+										//- content
+										.control__content.content
+											h2 Признание Клиентов и улучшенный сервис
+											p Во многом успешность автомойки, автосервиса или шиномонтажа зависит от удовлетворенности Клиента и сервиса. В технологиях Core12 заложены уникальные функции, которые помогут предоставить вашему гостю высочайший уровень сервиса и сделать его время пребывания приятно запоминающимся:
+											ul
+												li Идентификация;
+												li Персональная онлайн трансляция;
+												li Акции и программа лояльности;
+												li СМС рассылка и информирование;
+												li Обратная связь и отзывы;
+												li Взаимодействие через соц. сети;
+												li Электронный чек.
+								.control__col.control__col_4
+									.control__preview
+										img.control__img(src='img/control-4.png')
+							.control__row
+								.control__col.control__col_5
+									.control__preview
+										img.control__img(src='img/control-5.png')
+								.control__col
+									.control__wrap
+										//- content
+										.control__content.content
+											h2 Верные решения принимать проще с Core12
+											p Архитектура системы и адаптивная технология аналитики позволяет легко и комфортно использовать комплекс под ваши цели и желания, способствуя верному принятию маркетинговых и управленческих решений:
+											ul
+												li Облачный сервер;
+												li Детальная статистика;
+												li Импорт данных;
+												li Интеграция с внешними продуктами;
+												li Формирование отчетов;
+												li Автоматическая рассылка информации по контрагентам;
+												li Разграничение прав доступа.
+										button.control__btn.btn.js-popup-btn(data-popup='js-popup-join') <span class="control__no-tablet">Начните получать </span>больше прибыли прямо сейчас
+			//- section
+			.section
+				.section__center.center
+					//- title
+					.section__title.title Core12 в действии
+					.section__body
+						//- action
+						.action
+							.action__col.action__col_1
+								.action__item
+									img.action__img(src='img/action-1.jpg')
+									.action__info
+										.action__title Клиент
+										.action__text Особый сервис делает Клиента довольным и побуждает говорить о Вас, и обращаться снова.
+							.action__col.action__col_2
+								.action__item
+									img.action__img(src='img/action-2.jpg')
+									.action__info
+										.action__title Владелец
+										.action__text Нужные инструменты контроля и управления помогают Владельцу в создании крепкого бизнеса.
+										a.action__more(href='#')
+											.action__more-title <span class="action__break-tablet">Перейти </span>в «Демо кабинет»
+											.action__more-icon
+												+i('arrow-right')
+							.action__col.action__col_3
+								.action__item
+									img.action__img(src='img/action-3.jpg')
+									.action__info
+										.action__title Администратор
+										.action__text Персональная панель Администратора увеличивает скорость обслуживания и эффективность предприятия.
+			//- section
+			.section.section_dark.section_bg
+				.section__bg.section__bg_gray
+					+i('logo')
+				//- res
+				.res.js-res
+					.res__center.center
+						.res__nav.js-res-nav
+					.res__list.js-res-list
+						.res__item
+							.res__center.center
+								.res__row
+									.res__col
+										.res__user
+											.res__user-preview
+												img.res__user-ava(src='img/res-ava.png')
+											.res__user-wrap
+												.res__user-head
+													.res__user-social.social.social_sm
+														a.social__link.social__link_facebook(href='#')
+															+i('facebook')
+														a.social__link.social__link_vkontakte(href='#')
+															+i('vkontakte')
+													.res__user-name Татьяна Чевулич
+												.res__user-text До начала использования Core12 были перепробованы несколько систем, и каждая из них не могла полностью решить все сложности и задачи: контроль персонала, автоматический учёт и анализ, управление информацией и многие другие. Сказать, что переход на Core12 избавил от проблем – не сказать ни чего, система вызвала восторг: в первые дни после установки выявила лишние затраты, через месяц увеличила количество клиентов и позитивные отзывы.
+													+i('quotes-before')
+													+i('quotes-after')
+												.res__address
+													.res__address-icon
+														+i('marker')
+													.res__address-title г. Москва, Лужнецкая набережная, д.&nbsp;10А,&nbsp;стр.&nbsp;3
+									.res__col
+										//- title
+										.res__title.title Результаты установки Core12
+										.res__graph
+											img.res__graph-img(src='img/res-graph.png')
+						.res__item
+							.res__center.center
+								.res__row
+									.res__col
+										//- title
+										.res__title.title Результаты установки Core12
+										.res__graph
+											img.res__graph-img(src='img/res-graph.png')
+									.res__col
+										.res__user
+											.res__user-preview
+												img.res__user-ava(src='img/res-ava.png')
+											.res__user-wrap
+												.res__user-head
+													.res__user-social.social.social_sm
+														a.social__link.social__link_facebook(href='#')
+															+i('facebook')
+														a.social__link.social__link_vkontakte(href='#')
+															+i('vkontakte')
+													.res__user-name Татьяна Чевулич
+												.res__user-text До начала использования Core12 были перепробованы несколько систем, и каждая из них не могла полностью решить все сложности и задачи: контроль персонала, автоматический учёт и анализ, управление информацией и многие другие. Сказать, что переход на Core12 избавил от проблем – не сказать ни чего, система вызвала восторг: в первые дни после установки выявила лишние затраты, через месяц увеличила количество клиентов и позитивные отзывы.
+													+i('quotes-before')
+													+i('quotes-after')
+												.res__address
+													.res__address-icon
+														+i('marker')
+													.res__address-title г. Москва, Лужнецкая набережная, д.&nbsp;10А,&nbsp;стр.&nbsp;3
+				//- tech
+				.tech
+					.tech__center.center
+						.tech__col
+							.tech__video
+								img.tech__video-img(src='img/tech-video.jpg')
+								.tech__video-play
+									.tech__video-icon
+										+i('play')
+									.tech__video-text Нажмите PLAY для просмотра видео
+						.tech__col
+							//- title
+							.tech__title.title Core12 Technology
+							.tech__list
+								.tech__item
+									.tech__icon
+										+i('tech-1')
+									.tech__content
+										.tech__type Надежная гарантия
+										.tech__text Применяем только проверенное и сертифицированное оборудование, предоставляя гарантии своим Клиентам до 5 лет
+								.tech__item
+									.tech__icon
+										+i('tech-2')
+									.tech__content
+										.tech__type Безопасность данных
+										.tech__text Зашифрованный канал связи и охранный центр авторизации с доступом только для Клиента, надежно защищают персональные данные
+								.tech__item
+									.tech__icon
+										+i('tech-3')
+									.tech__content
+										.tech__type Строгая конфиденциальность
+										.tech__text Защита конфиденциальной информации и коммерческой тайны. Никакие сведения, полученные от Клиентов и Партнеров, не могут быть разглашены
+								.tech__item
+									.tech__icon
+										+i('tech-4')
+									.tech__content
+										.tech__type Быстрое реагирование 24/7
+										.tech__text Каждый запрос мгновенно передается в обработку и в случае неполадок сервисная группа устраняет их в тот же день
+								.tech__item
+									.tech__icon
+										+i('tech-5')
+									.tech__content
+										.tech__type Комфортные условия
+										.tech__text Персональный менеджер обеспечивает Вас необходимой информацией и профессионально решает любой вопрос за короткое время
+								.tech__item
+									.tech__icon
+										+i('tech-6')
+									.tech__content
+										.tech__type Непрерывное развитие
+										.tech__text Постоянно развиваем технологии и улучшаем качество процессов, удовлетворяя потребности и желания своих Клиентов
+			//- section
+			.section.section_bg.section
+				.section__bg.section__bg_blue
+					+i('logo')
+				.section__center.center
+					//- title
+					.section__title.title Наши надежные партнеры
+					.section__body
+						//- partners
+						.partners
+							.partners__item
+								img.partners__img(src='img/logos/intel.png' width='116')
+							.partners__item
+								img.partners__img(src='img/logos/megafon.png' width='184')
+							.partners__item
+								img.partners__img(src='img/logos/kosmetikavto.png' width='148')
+							.partners__item
+								img.partners__img(src='img/logos/hikvision.png' width='216')
+							.partners__item
+								img.partners__img(src='img/logos/apple.png' width='86')
+				.section__center.center
+					//- title
+					.section__title.title Остались вопросы?
+					.section__body
+						//- questions
+						.questions.js-tabs
+							.questions__list
+								.questions__item
+									button.questions__btn.js-tabs-btn
+										span.questions__btn-title Расчет стоимости и оплата
+									button.questions__btn.js-tabs-btn
+										span.questions__btn-title Установка комплекса и переход с другой системы
+								.questions__item
+									button.questions__btn.js-tabs-btn
+										span.questions__btn-title Обучение пользователей
+									button.questions__btn.js-tabs-btn
+										span.questions__btn-title 1с и дополнительное оборудование
+							.questions__wrap
+								//- content
+								.questions__content.content.js-tabs-item
+									p Мы подходим комплексно к автоматизации автобизнеса и качеству предоставляемых услуг. Для нас важен комфорт Заказчика. Поэтому одним из ключевых принципов Core12 является персональный подход, в том числе и к расчёту стоимости, что позволит Вам не только получить ощутимую выгоду, а также сэкономить.
+									h3 Расчет стоимости
+									p Расчет стоимости внедрения технологий осуществляется в индивидуальном порядке на основе:
+									ul
+										li Количества машиномест;
+										li Оснащения объекта;
+										li Типа помещения;
+										li Личных предпочтений и желаний Заказчика;
+										li Настройка комплекса (Бесплатно);
+										li Обучение персонала (Бесплатно);
+										li Профилактические выезды специалиста (Бесплатно);
+									h3 Скидки
+									p Хотя итоговая сумма, при расчете стоимости уже привлекательна, так как без начального завышения и, без больших наценок. Мы все же готовы предоставить дополнительные скидки для наших Клиентов и Партнеров.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+								//- content
+								.questions__content.content.js-tabs-item
+									p Мы подходим комплексно к автоматизации автобизнеса и качеству предоставляемых услуг. Для нас важен комфорт Заказчика. Поэтому одним из ключевых принципов Core12 является персональный подход, в том числе и к расчёту стоимости, что позволит Вам не только получить ощутимую выгоду, а также сэкономить.
+									h3 Расчет стоимости
+									p Расчет стоимости внедрения технологий осуществляется в индивидуальном порядке на основе:
+									ul
+										li Количества машиномест;
+										li Оснащения объекта;
+										li Типа помещения;
+										li Личных предпочтений и желаний Заказчика;
+										li Настройка комплекса (Бесплатно);
+										li Обучение персонала (Бесплатно);
+										li Профилактические выезды специалиста (Бесплатно);
+									h3 Скидки
+									p Хотя итоговая сумма, при расчете стоимости уже привлекательна, так как без начального завышения и, без больших наценок. Мы все же готовы предоставить дополнительные скидки для наших Клиентов и Партнеров.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+								//- content
+								.questions__content.content.js-tabs-item
+									p Мы подходим комплексно к автоматизации автобизнеса и качеству предоставляемых услуг. Для нас важен комфорт Заказчика. Поэтому одним из ключевых принципов Core12 является персональный подход, в том числе и к расчёту стоимости, что позволит Вам не только получить ощутимую выгоду, а также сэкономить.
+									h3 Расчет стоимости
+									p Расчет стоимости внедрения технологий осуществляется в индивидуальном порядке на основе:
+									ul
+										li Количества машиномест;
+										li Оснащения объекта;
+										li Типа помещения;
+										li Личных предпочтений и желаний Заказчика;
+										li Настройка комплекса (Бесплатно);
+										li Обучение персонала (Бесплатно);
+										li Профилактические выезды специалиста (Бесплатно);
+									h3 Скидки
+									p Хотя итоговая сумма, при расчете стоимости уже привлекательна, так как без начального завышения и, без больших наценок. Мы все же готовы предоставить дополнительные скидки для наших Клиентов и Партнеров.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+								//- content
+								.questions__content.content.js-tabs-item
+									p Мы подходим комплексно к автоматизации автобизнеса и качеству предоставляемых услуг. Для нас важен комфорт Заказчика. Поэтому одним из ключевых принципов Core12 является персональный подход, в том числе и к расчёту стоимости, что позволит Вам не только получить ощутимую выгоду, а также сэкономить.
+									h3 Расчет стоимости
+									p Расчет стоимости внедрения технологий осуществляется в индивидуальном порядке на основе:
+									ul
+										li Количества машиномест;
+										li Оснащения объекта;
+										li Типа помещения;
+										li Личных предпочтений и желаний Заказчика;
+										li Настройка комплекса (Бесплатно);
+										li Обучение персонала (Бесплатно);
+										li Профилактические выезды специалиста (Бесплатно);
+									h3 Скидки
+									p Хотя итоговая сумма, при расчете стоимости уже привлекательна, так как без начального завышения и, без больших наценок. Мы все же готовы предоставить дополнительные скидки для наших Клиентов и Партнеров.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia nesciunt laboriosam neque magnam officiis, accusamus consequuntur labore iure! Non, quibusdam nulla optio culpa magni eaque voluptatem porro ea unde.
+						//- footer
+						footer.footer
+							.footer__row
+								.footer__col
+									.footer__nav
+										.footer__nav-title Core12
+										.footer__nav-list
+											a.footer__nav-link(href='#') О нас
+											a.footer__nav-link(href='#') Функционал
+											a.footer__nav-link(href='#') Демонстрация
+											a.footer__nav-link(href='#') Остались вопросы?
+									.footer__nav
+										.footer__nav-title Сотрудничество
+										.footer__nav-list
+											a.footer__nav-link(href='#') Партнерам
+											a.footer__nav-link(href='#') Инвесторам
+											a.footer__nav-link(href='#') СМИ
+								.footer__col
+									.footer__nav
+										.footer__nav-title Контакты
+										//- contacts
+										.footer__nav-contacts.contacts
+											.contacts__item
+												.contacts__col
+													.contacts__icon
+														+i('phone')
+												.contacts__col +7 (499) 346-09-00 (многоканальный)
+											a.contacts__item.contacts__item_link(href='#')
+												.contacts__col
+													.contacts__icon
+														+i('email')
+												.contacts__col support@core12.ru
+											.contacts__item
+												.contacts__col
+													.contacts__icon
+														+i('marker')
+												.contacts__col г. Москва, Лужнецкая набережная, д. 10А, стр. 3
+							.footer__copyright © 2013 - 2016 CORE12 TECHNOLOGY
+							//- social
+							.footer__social.social
+								a.social__link.social__link_instagram(href='#')
+									+i('instagram')
+								a.social__link.social__link_facebook(href='#')
+									+i('facebook')
+								a.social__link.social__link_vkontakte(href='#')
+									+i('vkontakte')
+								a.social__link.social__link_youtube(href='#')
+									+i('youtube')
+			//- popup
+			.popup.js-popup.js-popup-join
+				.popup__center
+					button.popup__close
+						+i('close')
+					.popup__wrap.js-popup-wrap
+						//- form
+						.form
+							.form__title Заполните форму и мы бесплатно рассчитаем стоимость внедрения технологий на Ваше предприятие
+							.form__wrap
+								.form__field
+									input.form__input(type='text' placeholder='Введите ваше имя')
+								.form__field
+									input.form__input(type='text' placeholder='Введите ваш телефон или email')
+								button.form__btn.btn отправить
+						//- thank
+						.thank
+							.thank__title «Имя», спасибо!
+							.thank__content
+								.thank__text Заявка успешно отправлена.
+								.thank__text Ваш персональный менеджер свяжется с Вами в ближайшее время.
+							.thank__join
+								.thank__join-title Присоединяйтесь к нам и получайте актуальную информацию для развития автобизнеса
+								.thank__join-social.social
+									a.social__link.social__link_instagram(href='#')
+										+i('instagram')
+									a.social__link.social__link_facebook(href='#')
+										+i('facebook')
+									a.social__link.social__link_vkontakte(href='#')
+										+i('vkontakte')
+									a.social__link.social__link_youtube(href='#')
+										+i('youtube')
+
+		//- scripts
+		script(src='js/lib/head.js', data-headjs-load='js/init.js')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
